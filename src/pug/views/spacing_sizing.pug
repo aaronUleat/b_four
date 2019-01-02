@@ -1,0 +1,42 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title Spacing and Sizing
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css")
+    body
+        .container
+            h2 Spacing and Sizing
+            p.bg-primary.text-light.mb-5 Lorem ipsum dolor sit amet.
+            p.bg-info.text-white.mb-2.m-sm-3.m-lg-5 Lorem ipsum dolor sit amet.
+            p.bg-warning.mb-5 Lorem ipsum dolor sit amet.
+
+            p.bg-info.text-white.mx-3 Lorem ipsum dolor sit amet.
+
+            p.bg-info.text-white.my-5 Lorem ipsum dolor sit amet.
+
+            p.bg-info.text-white.p-3 Lorem ipsum dolor sit amet.
+            // Pading left
+            p.bg-info.text-white.pl-5 Lorem ipsum dolor sit amet.
+            p.bg-warning.text-white.pt-3 Lorem ipsum dolor sit amet.
+            // responsive sizes
+            p.bg-success.text-white.p-sm-1.p-md-4.p-xl-5 Lorem ipsum dolor sit amet.
+
+            hr
+            h4 Working with width
+            .bg-secondary(style="width: 800px; height: 600px")
+                .bg-warning.text-light.p-3.w-25.m-auto Lorem ipsum dolor sit.
+                .bg-success.text-light.p-3.w-50 Lorem ipsum dolor sit amet.
+                .bg-info.text-light.p-3.w-75 Lorem ipsum dolor sit amet.
+                .bg-danger.text-light.p-3.w-100 Lorem ipsum dolor sit amet.
+
+            hr
+            h4 Working with Height
+            .bg-secondary.mt-2.m-auto(style="width: 800px; height: 600px")
+                .bg-primary.text-light.p-3.w-25.h-25.float-left 25%
+                .bg-info.text-light.p-3.w-25.h-50.float-left 50%
+                .bg-warning.text-light.p-3.w-25.h-75.float-left 75%
+                .bg-success.text-light.p-3.w-25.h-100.float-left 100%
+

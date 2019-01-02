@@ -1,0 +1,30 @@
+{
+  "name": "bootstrap_four",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pug": "gulp pug",
+    "sass": "gulp sass",
+    "serve": "browser-sync start --server --startPath \"dist\" --files \"dist/**/*.+(html|css|js)\" ",
+    "build": "npm run pug && npm run sass",
+    "watch:pug": "onchange \"./src/pug/**\" -- npm run pug ",
+    "watch:sass": "onchange \"./src/scss/**\" -- npm run sass ",
+    "watch:dev": "parallelshell \"npm run serve\" \"npm run watch:pug\" \"npm run watch:sass\" "
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "onchange": "^5.2.0",
+    "parallelshell": "^3.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "save": "^2.3.3"
+  }
+}
